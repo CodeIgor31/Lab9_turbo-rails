@@ -1,0 +1,17 @@
+<h3>Таблица с результатами</h3>
+Введенное диапазон: [0, <%= @number %>]
+<table class = "tab">
+    <tr>
+    <th>Число</th>
+    <th>Квадрат числа</th>
+    </tr>
+    <% @res_arr.each do |elem|%>
+    <tr>
+        <td><%= elem %></td>
+        <td><%= elem**2 %></td>
+    </tr>
+    <% end%>
+</table>
+Количество таких чисел
+<p id="counter"><%= @res_arr.size %></p>
+
