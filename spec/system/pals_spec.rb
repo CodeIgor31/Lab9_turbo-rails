@@ -2,8 +2,8 @@
 
 require 'rails_helper'
 
-RSpec.describe 'Static content', type: :system do
-  scenario 'valid sequence of numbers' do
+RSpec.describe 'Content', type: :system do
+  scenario 'valid' do
     visit home_path
 
     fill_in :num, with: '11'
@@ -13,7 +13,7 @@ RSpec.describe 'Static content', type: :system do
     expect(find('#counter')).to have_text('5')
   end
 
-  scenario 'invalid input' do
+  scenario 'invalid' do
     visit home_path
 
     fill_in :num, with: '-1'

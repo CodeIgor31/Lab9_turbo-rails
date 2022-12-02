@@ -5,13 +5,13 @@
     <th>Число</th>
     <th>Квадрат числа</th>
     </tr>
-    <% @res_arr.each do |elem|%>
+    <% @hash.each do |res, sqr|%>
     <tr>
-        <td><%= elem %></td>
-        <td><%= elem**2 %></td>
+        <td><%= res %></td>
+        <td><%= sqr %></td>
     </tr>
     <% end%>
 </table>
 Количество таких чисел
-<p id="counter"><%= @res_arr.size %></p>
+<p id="counter"><%= @hash.size %></p>
 
